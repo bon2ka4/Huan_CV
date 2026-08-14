@@ -3,16 +3,16 @@ import { Gamepad2, Check, Play, Sparkles, Award } from 'lucide-react';
 
 export default function ProjectCard({ project, onPlayDemo }) {
   return (
-    <div className="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col lg:flex-row group hover:border-cyan-500/40 transition-all duration-300 shadow-xl">
+    <div className="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col group hover:border-cyan-500/40 transition-all duration-300 shadow-xl">
       
-      {/* Thumbnail & Image Overlay Container */}
-      <div className="relative lg:w-5/12 min-h-[300px] lg:min-h-[420px] overflow-hidden bg-slate-900 shrink-0">
+      {/* Thumbnail & Image Overlay Container (Top Banner) */}
+      <div className="relative w-full h-72 sm:h-80 md:h-96 overflow-hidden bg-slate-900">
         <img
           src={project.thumbnail}
           alt={project.title}
           className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
         />
-        <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950 via-transparent to-transparent opacity-50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
         
         {/* Top Badges */}
         <div className="absolute top-4 right-4 z-10">
