@@ -44,25 +44,32 @@ export default function Experience() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Unified Timeline Container */}
-        <div className="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:-translate-x-px before:w-0.5 before:bg-gradient-to-b before:from-cyan-500/80 via-purple-500/40 before:to-transparent">
-          {timelineItems.map((item, idx) => {
+        {/* Section Title Header */}
+        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-medium">
+            <Briefcase className="w-3.5 h-3.5" />
+            CAREER & EDUCATION
+          </div>
+
+          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+            Kinh Nghiệm và Học Vấn
+          </h2>
+        </div>
+
+        {/* Straight Linear Top-to-Bottom Timeline Container */}
+        <div className="max-w-3xl mx-auto space-y-10 relative before:absolute before:inset-y-0 before:left-5 sm:before:left-6 before:w-0.5 before:bg-gradient-to-b before:from-cyan-500 via-purple-500/50 before:to-transparent">
+          {timelineItems.map((item) => {
             const IconComp = item.icon;
             return (
-              <div
-                key={item.id}
-                className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${
-                  idx % 2 === 0 ? 'md:flex-row-reverse' : ''
-                }`}
-              >
+              <div key={item.id} className="relative flex items-start group pl-12 sm:pl-16">
                 
-                {/* Timeline Icon Badge */}
-                <div className={`flex items-center justify-center w-9 h-9 rounded-full bg-slate-950 border-2 shadow-lg z-10 shrink-0 absolute left-4 sm:left-1/2 -translate-x-1/2 ${item.iconBg}`}>
-                  <IconComp className="w-4 h-4" />
+                {/* Timeline Icon Badge (centered on vertical axis line) */}
+                <div className={`flex items-center justify-center w-10 h-10 rounded-full bg-slate-950 border-2 shadow-lg z-10 shrink-0 absolute left-0 top-1.5 ${item.iconBg}`}>
+                  <IconComp className="w-5 h-5" />
                 </div>
 
                 {/* Timeline Card */}
-                <div className="w-[calc(100%-3rem)] sm:w-[calc(50%-2.5rem)] ml-12 sm:ml-0 glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/30 transition-all duration-300 space-y-4">
+                <div className="w-full glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/30 transition-all duration-300 space-y-4">
                   
                   {/* Period & Organization Header */}
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
