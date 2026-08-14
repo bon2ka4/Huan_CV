@@ -18,15 +18,6 @@ export default function Hero() {
           
           {/* Left Column: Text & Intro */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            
-            {/* Status Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border border-cyan-500/30 text-cyan-400 text-xs font-medium tracking-wide">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-              </span>
-              <span>Unity Developer | CSC Mobi & Tripledot Partner</span>
-            </div>
 
             {/* Main Headline */}
             <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.15]">

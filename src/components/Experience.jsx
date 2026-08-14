@@ -5,6 +5,20 @@ import { Briefcase, Building2, GraduationCap, CheckCircle2 } from 'lucide-react'
 export default function Experience() {
   const timelineItems = [
     {
+      id: "education",
+      type: "education",
+      period: educationData.period,
+      role: educationData.degree,
+      subtitle: educationData.major,
+      organization: educationData.school,
+      icon: GraduationCap,
+      badgeColor: "bg-purple-950 border-purple-500/30 text-purple-400",
+      iconBg: "border-purple-400 text-purple-400 shadow-purple-500/20",
+      bullets: [
+        educationData.description
+      ]
+    },
+    {
       id: "work",
       type: "work",
       period: experienceData[0]?.period || "Tháng 06/2022 - Hiện tại",
@@ -18,20 +32,6 @@ export default function Experience() {
         "Được làm việc cùng với đối tác Tripledot Studios với vai trò chính trong việc bảo trì, tối ưu, fix lỗi và phát triển content cho dự án Marble Match.",
         "Đảm nhiệm vai trò support các dự án khác: UI, tích hợp SDK, tích hợp Ads, Analytics Tracking, Localization (Đa ngôn ngữ), và các tính năng ngoài luồng core gameplay (Booster, Daily rewards,...).",
         "Đảm nhiệm vai trò code chính cho các dự án game mới và game demo."
-      ]
-    },
-    {
-      id: "education",
-      type: "education",
-      period: educationData.period,
-      role: educationData.degree,
-      subtitle: educationData.major,
-      organization: educationData.school,
-      icon: GraduationCap,
-      badgeColor: "bg-purple-950 border-purple-500/30 text-purple-400",
-      iconBg: "border-purple-400 text-purple-400 shadow-purple-500/20",
-      bullets: [
-        educationData.description
       ]
     }
   ];
