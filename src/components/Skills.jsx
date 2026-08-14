@@ -22,19 +22,10 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono">
-            <Workflow className="w-3.5 h-3.5" />
-            TECHNICAL STACK & CORE COMPETENCIES
-          </div>
-          
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white">
-            Năng lực Kỹ thuật & Tối ưu hóa
+            Kỹ Năng Chuyên Môn
           </h2>
-          
-          <p className="text-slate-400 text-sm sm:text-base">
-            Tập trung vào hiệu năng hệ thống, kiến trúc code chuẩn mực và kỹ thuật nén tài nguyên tối ưu trên Unity Engine.
-          </p>
         </div>
 
         {/* Skill Cards Grid */}
@@ -82,23 +73,6 @@ export default function Skills() {
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom Optimization Callout */}
-        <div className="mt-12 glass-panel rounded-2xl p-6 border border-cyan-500/20 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/40 flex items-center justify-center text-amber-400 shrink-0">
-              <ShieldAlert className="w-6 h-6" />
-            </div>
-            <div>
-              <h4 className="font-heading font-bold text-base text-white">
-                Nguyên tắc Không Đóng Băng Game (Zero GC Spikes)
-              </h4>
-              <p className="text-xs text-slate-400 mt-1">
-                Tất cả gameplay loops chính được thiết kế loại bỏ hoàn toàn GC Allocation (`gcAlloc = 0B`), đảm bảo đợt thu gom rác bộ nhớ không gây khựng game.
-              </p>
-            </div>
-          </div>
         </div>
 
       </div>
