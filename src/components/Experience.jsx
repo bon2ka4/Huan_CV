@@ -28,10 +28,10 @@ export default function Experience() {
       badgeColor: "bg-cyan-950 border-cyan-500/30 text-cyan-400",
       iconBg: "border-cyan-400 text-cyan-400 shadow-cyan-500/20",
       bullets: [
+        "Đảm nhiệm vai trò code chính cho các dự án game mới và game demo.",
         "Đảm nhiệm vai trò chính trong việc bảo trì, tối ưu, fix lỗi và thêm content cho các dự án Plant Series (Merge Plant, Zombie Kingdom,...).",
         "Được làm việc cùng với đối tác Tripledot Studios với vai trò chính trong việc bảo trì, tối ưu, fix lỗi và phát triển content cho dự án Marble Match.",
-        "Đảm nhiệm vai trò support các dự án khác: UI, tích hợp SDK, tích hợp Ads, Analytics Tracking, Localization (Đa ngôn ngữ), và các tính năng ngoài luồng core gameplay (Booster, Daily rewards,...).",
-        "Đảm nhiệm vai trò code chính cho các dự án game mới và game demo."
+        "Đảm nhiệm vai trò support các dự án khác: UI, tích hợp SDK, tích hợp Ads, Analytics Tracking, Localization (Đa ngôn ngữ), và các tính năng ngoài luồng core gameplay (Booster, Daily rewards,...)."
       ]
     }
   ];
