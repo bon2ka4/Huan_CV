@@ -1,12 +1,12 @@
 import React from 'react';
-import { Gamepad2, Check, Play, Sparkles } from 'lucide-react';
+import { Gamepad2, Check, Play, Sparkles, Award } from 'lucide-react';
 
 export default function ProjectCard({ project, onPlayDemo }) {
   return (
     <div className="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col group hover:border-cyan-500/40 transition-all duration-300">
       
       {/* Thumbnail & Image Overlay Container */}
-      <div className="relative h-52 w-full overflow-hidden bg-slate-900">
+      <div className="relative h-60 w-full overflow-hidden bg-slate-900">
         <img
           src={project.thumbnail}
           alt={project.title}
@@ -20,10 +20,10 @@ export default function ProjectCard({ project, onPlayDemo }) {
             {project.category}
           </span>
 
-          {project.hasWebglDemo && (
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/90 text-slate-950 flex items-center gap-1.5 shadow-lg shadow-emerald-500/30">
-              <Sparkles className="w-3.5 h-3.5" />
-              Playable WebGL
+          {project.role && (
+            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950/90 border border-cyan-400/50 text-cyan-300 flex items-center gap-1.5 shadow-lg shadow-cyan-500/20">
+              <Award className="w-3.5 h-3.5 text-cyan-400" />
+              {project.role}
             </span>
           )}
         </div>

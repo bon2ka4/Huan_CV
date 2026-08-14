@@ -70,7 +70,23 @@ export const skillsData = [
   }
 ];
 
-export const projectsData = [];
+export const projectsData = [
+  {
+    id: "block-blaster",
+    title: "Block Blaster",
+    role: "Code Chính",
+    category: "Casual / Block Puzzle",
+    tagline: "Tựa game giải đố xếp khối gạch kéo thả, tính toán chuỗi combo nổ hàng/cột và tối ưu hóa chuyển động mượt mà trên mobile.",
+    thumbnail: "./images/block_blaster.jpg",
+    features: [
+      "Đảm nhiệm vai trò code chính toàn bộ Core Gameplay: Ma trận Grid (8x8), thuật toán kiểm tra logic nổ hàng/cột và cơ chế sinh khối ngẫu nhiên (Block Spawner).",
+      "Xây dựng cơ chế kéo thả (Drag & Drop) mượt mà, tính toán vị trí cảm ứng đa điểm và hiệu ứng bắt dính vào ô lưới (Snap to Grid).",
+      "Tối ưu hóa hiệu năng (Zero GC): Áp dụng triệt để kiến trúc Object Pooling cho các khối gạch và hiệu ứng hạt (VFX), đảm bảo duy trì 60 FPS ổn định trên thiết bị cấu hình thấp.",
+      "Thiết kế logic tính điểm chuỗi combo liên hoàn, lưu trữ High Score và tích hợp hiệu ứng âm thanh sống động."
+    ],
+    techStack: ["Unity 2D/3D", "C# Gameplay", "Grid Matrix 8x8", "Object Pooling", "DoTween & VFX", "UI Canvas"]
+  }
+];
 
 export const experienceData = [
   {

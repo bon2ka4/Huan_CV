@@ -42,40 +42,15 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             {/* Section Header */}
-            <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
-                <Gamepad2 className="w-3.5 h-3.5" />
-                PLAYABLE WEBGL SHOWCASE
-              </div>
-
-              <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white">
-                Dự Án Nổi Bật & Demo Playable
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="font-heading font-extrabold text-3xl sm:text-4xl bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent inline-flex items-center gap-3">
+                <Gamepad2 className="w-8 h-8 text-cyan-400" />
+                Dự Án Thực Chiến
               </h2>
-
-              <p className="text-slate-400 text-sm sm:text-base">
-                Nhấn nút <strong className="text-cyan-400 font-medium">Chơi Game Demo</strong> ở bất kỳ tựa game nào để chơi trực tiếp bản Unity WebGL ngay trên trình duyệt của bạn.
-              </p>
-            </div>
-
-            {/* Category Filter Pills */}
-            <div className="flex items-center justify-center flex-wrap gap-2 mb-12">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setFilter(cat)}
-                  className={`px-4 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${
-                    filter === cat
-                      ? 'bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
-                      : 'glass-card text-slate-300 hover:text-white hover:border-slate-700'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
             </div>
 
             {/* Projects Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={`grid grid-cols-1 ${filteredProjects.length === 1 ? 'max-w-2xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'} gap-8`}>
               {filteredProjects.map((project) => (
                 <ProjectCard
                   key={project.id}

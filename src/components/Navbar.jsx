@@ -21,6 +21,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Tổng quan", href: "#hero", icon: Code2 },
     { name: "Kỹ năng", href: "#skills", icon: Cpu },
+    { name: "Dự án", href: "#projects", icon: FolderKanban },
     { name: "Kinh nghiệm & Học vấn", href: "#experience", icon: Briefcase },
   ];
 
