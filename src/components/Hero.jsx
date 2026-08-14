@@ -82,21 +82,29 @@ export default function Hero() {
             </div>
 
             {/* CTA Action Buttons */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+              <a
+                href="#skills"
+                className="flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95"
+              >
+                <Cpu className="w-4 h-4" />
+                Kỹ Năng Chuyên Môn
+                <ArrowRight className="w-4 h-4 ml-1" />
+              </a>
+
               <a
                 href="#experience"
-                className="flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95"
+                className="flex items-center gap-2 px-5 py-3.5 rounded-xl font-medium text-sm text-slate-200 glass-card hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300"
               >
-                <Briefcase className="w-5 h-5" />
-                Xem Kinh Nghiệm & Học Vấn
-                <ArrowRight className="w-4 h-4 ml-1" />
+                <Briefcase className="w-4 h-4 text-cyan-400" />
+                Kinh Nghiệm & Học Vấn
               </a>
 
               <button
                 onClick={handleExportPDF}
-                className="no-print flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 glass-panel border border-cyan-500/40 hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+                className="no-print flex items-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-200 glass-panel border border-cyan-500/40 hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
               >
-                <Download className="w-5 h-5 text-cyan-400" />
+                <Download className="w-4 h-4 text-cyan-400" />
                 Tải CV (PDF)
               </button>
             </div>

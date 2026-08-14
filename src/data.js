@@ -18,7 +18,57 @@ export const educationData = {
   description: "Tích lũy kiến thức chuyên sâu về Kỹ thuật lập trình Game, Mô phỏng hệ thống và kỹ năng làm việc nhóm."
 };
 
-export const skillsData = [];
+export const skillsData = [
+  {
+    category: "Lập trình chính (Programming)",
+    icon: "Cpu",
+    skills: [
+      { name: "Unity & C# Gameplay Programming", level: "Expert" },
+      { name: "Cấu trúc OOP & Clean Code", level: "Senior" },
+      { name: "Xử lý Vật lý (Physics 2D/3D) & Animation", level: "Senior" },
+      { name: "UI Canvas & Layout Optimization", level: "Senior" }
+    ]
+  },
+  {
+    category: "Kiến trúc Game (Architecture)",
+    icon: "Boxes",
+    skills: [
+      { name: "Finite State Machine (FSM) Gameplay & AI", level: "Senior" },
+      { name: "Hệ thống Modular (Modular Systems)", level: "Senior" },
+      { name: "ScriptableObject Data Architecture", level: "Senior" },
+      { name: "Save/Load Data (JSON / PlayerPrefs)", level: "Senior" }
+    ]
+  },
+  {
+    category: "Tối ưu hóa Mobile (Optimization)",
+    icon: "Zap",
+    skills: [
+      { name: "Tối ưu hiệu năng (FPS) thiết bị cấu hình thấp", level: "Expert" },
+      { name: "Quản lý bộ nhớ, Zero GC & Object Pooling", level: "Senior" },
+      { name: "Kiểm soát và giảm dung lượng bản build (Textures, Audio)", level: "Senior" },
+      { name: "Giảm Draw Calls & Canvas Rebuilds", level: "Senior" }
+    ]
+  },
+  {
+    category: "Tích hợp SDK (SDKs & Ads)",
+    icon: "Sparkles",
+    skills: [
+      { name: "Firebase (Analytics, Events, Remote Config)", level: "Senior" },
+      { name: "Ads Mediation (AppLovin MAX, AdMob, IronSource)", level: "Senior" },
+      { name: "In-App Purchase (IAP) & Quản lý tiền tệ", level: "Senior" },
+      { name: "Localization (Đa ngôn ngữ)", level: "Senior" }
+    ]
+  },
+  {
+    category: "Công cụ & Quy trình (Tools & Workflow)",
+    icon: "Workflow",
+    skills: [
+      { name: "Git Workflow (Version Control, Branching)", level: "Senior" },
+      { name: "Debugging & Profiling (Unity Profiler, Android Logcat)", level: "Senior" },
+      { name: "Thích ứng nhanh, học hỏi công nghệ mới & Teamwork", level: "Expert" }
+    ]
+  }
+];
 
 export const projectsData = [];
 

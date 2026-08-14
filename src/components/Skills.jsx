@@ -6,7 +6,8 @@ const iconMap = {
   Cpu: Cpu,
   Zap: Zap,
   Boxes: Boxes,
-  Sparkles: Sparkles
+  Sparkles: Sparkles,
+  Workflow: Workflow
 };
 
 export default function Skills() {
