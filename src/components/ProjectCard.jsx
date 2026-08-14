@@ -17,10 +17,15 @@ export default function ProjectCard({ project, onPlayDemo }) {
         {/* Top Badges */}
         <div className="absolute top-4 right-4 z-10">
           {project.role && (
-            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-cyan-950/90 border border-cyan-400/60 text-cyan-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 tracking-wide backdrop-blur-md">
-              <Award className="w-4 h-4 text-cyan-400" />
-              {project.role}
-            </span>
+            <div className="relative">
+              {/* Glowing Aura */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-300 rounded-2xl blur-md opacity-75" />
+              
+              <span className="relative px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-extrabold bg-gradient-to-r from-amber-400 via-orange-400 to-yellow-400 text-slate-950 flex items-center gap-2 shadow-2xl border border-amber-200/90 tracking-wider uppercase">
+                <Award className="w-4 h-4 sm:w-5 sm:h-5 text-slate-950 stroke-[2.5]" />
+                {project.role}
+              </span>
+            </div>
           )}
         </div>
 
