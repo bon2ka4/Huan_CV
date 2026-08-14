@@ -10,6 +10,8 @@ const iconMap = {
 };
 
 export default function Skills() {
+  if (!skillsData || skillsData.length === 0) return null;
+
   return (
     <section id="skills" className="py-24 relative overflow-hidden bg-slate-950/60">
       

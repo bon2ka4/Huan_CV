@@ -80,20 +80,12 @@ export default function Hero() {
             {/* CTA Action Buttons */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
               <a
-                href="#projects"
+                href="#experience"
                 className="flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95"
               >
-                <Gamepad2 className="w-5 h-5" />
-                Xem Danh Sách Dự Án
+                <Briefcase className="w-5 h-5" />
+                Xem Kinh Nghiệm & Học Vấn
                 <ArrowRight className="w-4 h-4 ml-1" />
-              </a>
-
-              <a
-                href="#skills"
-                className="flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm text-slate-200 glass-card hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300"
-              >
-                <Cpu className="w-4 h-4 text-cyan-400" />
-                Kỹ Năng Thực Chiến
               </a>
             </div>
 
