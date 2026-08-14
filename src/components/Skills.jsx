@@ -65,26 +65,15 @@ export default function Skills() {
                 </div>
 
                 {/* Skills List */}
-                <div className="space-y-3.5">
+                <div className="space-y-3">
                   {cat.skills.map((skill, sIdx) => (
                     <div
                       key={sIdx}
-                      className="flex items-center justify-between p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-slate-700/80 transition-colors"
+                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-slate-700/80 transition-colors"
                     >
-                      <div className="flex items-center gap-3">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span className="text-sm font-medium text-slate-200">
-                          {skill.name}
-                        </span>
-                      </div>
-                      <span className={`text-[11px] font-mono px-2.5 py-0.5 rounded-full border ${
-                        skill.level === 'Expert'
-                          ? 'bg-cyan-950 border-cyan-500/50 text-cyan-300'
-                          : skill.level === 'Senior'
-                          ? 'bg-purple-950 border-purple-500/50 text-purple-300'
-                          : 'bg-slate-800 border-slate-700 text-slate-300'
-                      }`}>
-                        {skill.level}
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                      <span className="text-sm font-medium text-slate-200">
+                        {skill.name}
                       </span>
                     </div>
                   ))}

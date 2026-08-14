@@ -23,49 +23,49 @@ export const skillsData = [
     category: "Lập trình chính (Programming)",
     icon: "Cpu",
     skills: [
-      { name: "Unity & C# Gameplay Programming", level: "Expert" },
-      { name: "Cấu trúc OOP & Clean Code", level: "Senior" },
-      { name: "Xử lý Vật lý (Physics 2D/3D) & Animation", level: "Senior" },
-      { name: "UI Canvas & Layout Optimization", level: "Senior" }
+      { name: "Unity & C# Gameplay Programming" },
+      { name: "Cấu trúc OOP & Clean Code" },
+      { name: "Xử lý Vật lý (Physics 2D/3D) & Animation" },
+      { name: "UI Canvas & Layout Optimization" }
     ]
   },
   {
     category: "Kiến trúc Game (Architecture)",
     icon: "Boxes",
     skills: [
-      { name: "Finite State Machine (FSM) Gameplay & AI", level: "Senior" },
-      { name: "Hệ thống Modular (Modular Systems)", level: "Senior" },
-      { name: "ScriptableObject Data Architecture", level: "Senior" },
-      { name: "Save/Load Data (JSON / PlayerPrefs)", level: "Senior" }
+      { name: "Finite State Machine (FSM) Gameplay & AI" },
+      { name: "Hệ thống Modular (Modular Systems)" },
+      { name: "ScriptableObject Data Architecture" },
+      { name: "Save/Load Data (JSON / PlayerPrefs)" }
     ]
   },
   {
     category: "Tối ưu hóa Mobile (Optimization)",
     icon: "Zap",
     skills: [
-      { name: "Tối ưu hiệu năng (FPS) thiết bị cấu hình thấp", level: "Expert" },
-      { name: "Quản lý bộ nhớ, Zero GC & Object Pooling", level: "Senior" },
-      { name: "Kiểm soát và giảm dung lượng bản build (Textures, Audio)", level: "Senior" },
-      { name: "Giảm Draw Calls & Canvas Rebuilds", level: "Senior" }
+      { name: "Tối ưu hiệu năng (FPS) thiết bị cấu hình thấp" },
+      { name: "Quản lý bộ nhớ, Zero GC & Object Pooling" },
+      { name: "Kiểm soát và giảm dung lượng bản build (Textures, Audio)" },
+      { name: "Giảm Draw Calls & Canvas Rebuilds" }
     ]
   },
   {
     category: "Tích hợp SDK (SDKs & Ads)",
     icon: "Sparkles",
     skills: [
-      { name: "Firebase (Analytics, Events, Remote Config)", level: "Senior" },
-      { name: "Ads Mediation (AppLovin MAX, AdMob, IronSource)", level: "Senior" },
-      { name: "In-App Purchase (IAP) & Quản lý tiền tệ", level: "Senior" },
-      { name: "Localization (Đa ngôn ngữ)", level: "Senior" }
+      { name: "Firebase (Analytics, Events, Remote Config)" },
+      { name: "Ads Mediation (AppLovin MAX, AdMob, IronSource)" },
+      { name: "In-App Purchase (IAP) & Quản lý tiền tệ" },
+      { name: "Localization (Đa ngôn ngữ)" }
     ]
   },
   {
     category: "Công cụ & Quy trình (Tools & Workflow)",
     icon: "Workflow",
     skills: [
-      { name: "Git Workflow (Version Control, Branching)", level: "Senior" },
-      { name: "Debugging & Profiling (Unity Profiler, Android Logcat)", level: "Senior" },
-      { name: "Thích ứng nhanh, học hỏi công nghệ mới & Teamwork", level: "Expert" }
+      { name: "Git Workflow (Version Control, Branching)" },
+      { name: "Debugging & Profiling (Unity Profiler, Android Logcat)" },
+      { name: "Thích ứng nhanh, học hỏi công nghệ mới & Teamwork" }
     ]
   }
 ];
