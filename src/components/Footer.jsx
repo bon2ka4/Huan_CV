@@ -1,6 +1,6 @@
 import React from 'react';
 import { personalData } from '../data';
-import { Gamepad2, Heart, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Gamepad2, Phone, Mail, MapPin, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -20,35 +20,25 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <span className="font-heading font-bold text-base text-white">BÓN.UNITY</span>
-              <p className="text-xs text-slate-400">Senior Unity Developer & Game Architect</p>
+              <span className="font-heading font-bold text-base text-white">{personalData.name}</span>
+              <p className="text-xs text-cyan-400">{personalData.title}</p>
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            <a
-              href={personalData.socials.github}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-900 transition-colors"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              href={personalData.socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-slate-900 transition-colors"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href={personalData.socials.email}
-              className="p-2 rounded-lg text-slate-400 hover:text-emerald-400 hover:bg-slate-900 transition-colors"
-            >
-              <Mail className="w-5 h-5" />
-            </a>
+          {/* Center Contact info (No links) */}
+          <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300">
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4 text-emerald-400" />
+              <span>{personalData.phone}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-cyan-400" />
+              <span>{personalData.email}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-purple-400" />
+              <span>{personalData.location}</span>
+            </div>
           </div>
 
           {/* Back to Top */}
@@ -62,8 +52,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright */}
-        <div className="pt-6 text-center text-xs text-slate-500 flex items-center justify-center gap-1">
-          <span>© {new Date().getFullYear()} {personalData.name}. Built with React, TailwindCSS & Unity WebGL.</span>
+        <div className="pt-6 text-center text-xs text-slate-500">
+          © {new Date().getFullYear()} {personalData.name} — Unity Developer Portfolio.
         </div>
       </div>
     </footer>
