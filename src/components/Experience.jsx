@@ -45,13 +45,9 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Title Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-medium">
-            <Briefcase className="w-3.5 h-3.5" />
-            CAREER & EDUCATION
-          </div>
-
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent inline-flex items-center gap-3">
+            <Briefcase className="w-8 h-8 text-cyan-400" />
             Kinh Nghiệm và Học Vấn
           </h2>
         </div>
