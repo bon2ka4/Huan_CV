@@ -75,16 +75,16 @@ export const projectsData = [
     id: "block-blaster",
     title: "Block Blaster",
     role: "Code Chính",
-    category: "Casual / Block Puzzle",
-    tagline: "Tựa game giải đố xếp khối gạch kéo thả, tính toán chuỗi combo nổ hàng/cột và tối ưu hóa chuyển động mượt mà trên mobile.",
+    category: "Color Match & Block Puzzle",
+    tagline: "Game giải đố chiến thuật màu sắc kết hợp cơ chế bắn phá khối tự động (Auto-Blast), quản lý khay chứa giới hạn và vượt chướng ngại vật đa dạng.",
     thumbnail: "./images/block_blaster.jpg",
     features: [
-      "Đảm nhiệm vai trò code chính toàn bộ Core Gameplay: Ma trận Grid (8x8), thuật toán kiểm tra logic nổ hàng/cột và cơ chế sinh khối ngẫu nhiên (Block Spawner).",
-      "Xây dựng cơ chế kéo thả (Drag & Drop) mượt mà, tính toán vị trí cảm ứng đa điểm và hiệu ứng bắt dính vào ô lưới (Snap to Grid).",
-      "Tối ưu hóa hiệu năng (Zero GC): Áp dụng triệt để kiến trúc Object Pooling cho các khối gạch và hiệu ứng hạt (VFX), đảm bảo duy trì 60 FPS ổn định trên thiết bị cấu hình thấp.",
-      "Thiết kế logic tính điểm chuỗi combo liên hoàn, lưu trữ High Score và tích hợp hiệu ứng âm thanh sống động."
+      "Đảm nhiệm vai trò code chính Core Gameplay & Cơ chế Auto-Blast: Xây dựng logic chọn bóng màu từ khay dưới (Tray Slots) để tự động kích hoạt đạn bắn phá các cụm khối gạch cùng màu trên bảng giải đố.",
+      "Hệ thống Quản lý Khay chứa & Thuật toán Game Over: Thiết kế thuật toán quản lý số lượng ô chứa giới hạn ở khay, xử lý logic hết nước đi (Out of moves / Fail state) khi khay đầy.",
+      "Hệ thống Chướng ngại vật (Blockers & Level System): Lập trình logic các khối đặc thù (Khối khóa, rào chắn, màn che, khối đổi màu...) và kiến trúc nạp cấu hình level hand-crafted.",
+      "Tối ưu hóa hiệu năng & Hiệu ứng bắt mắt (Juicy VFX): Xử lý hiệu ứng hạt nổ vỡ mãn nhãn, tia laser bắn mượt mà, áp dụng Object Pooling cho toàn bộ bóng, khối gạch và hạt VFX giúp game luôn đạt 60 FPS ổn định."
     ],
-    techStack: ["Unity 2D/3D", "C# Gameplay", "Grid Matrix 8x8", "Object Pooling", "DoTween & VFX", "UI Canvas"]
+    techStack: ["Unity 2D/3D", "C# Gameplay", "Auto-Blast Mechanics", "Tray Slot System", "Object Pooling", "DoTween & VFX", "Level Architecture"]
   }
 ];
 
