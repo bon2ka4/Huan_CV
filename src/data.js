@@ -7,6 +7,7 @@ export const personalData = {
   address: "46 ngõ 131 thôn An Bình, An Khánh, Hà Nội",
   phone: "+84 944617420",
   email: "hoangquanghuan9x@gmail.com",
+  avatar: "./images/avatar.png"
 };
 
 export const educationData = {
