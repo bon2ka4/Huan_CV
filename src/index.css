@@ -63,3 +63,37 @@
 .font-heading {
   font-family: 'Space Grotesk', sans-serif;
 }
+
+/* Print styles for exporting clean PDF */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background-color: #020617 !important;
+    color: #f8fafc !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .glass-card,
+  .glass-panel {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .blur-\[140px\],
+  .blur-\[120px\],
+  .blur-xl {
+    filter: none !important;
+    display: none !important;
+  }
+}

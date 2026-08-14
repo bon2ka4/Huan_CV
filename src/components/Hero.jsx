@@ -1,8 +1,9 @@
-import React from 'react';
-import { personalData } from '../data';
-import { Gamepad2, Phone, Mail, MapPin, Award, Cpu, ShieldCheck, ArrowRight, GraduationCap, Briefcase } from 'lucide-react';
+import { Gamepad2, Phone, Mail, MapPin, Award, Cpu, ShieldCheck, ArrowRight, GraduationCap, Briefcase, Download } from 'lucide-react';
 
 export default function Hero() {
+  const handleExportPDF = () => {
+    window.print();
+  };
   return (
     <section id="hero" className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
       {/* Background Ambient Glows */}
@@ -88,6 +89,14 @@ export default function Hero() {
                 Xem Kinh Nghiệm & Học Vấn
                 <ArrowRight className="w-4 h-4 ml-1" />
               </a>
+
+              <button
+                onClick={handleExportPDF}
+                className="no-print flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 glass-panel border border-cyan-500/40 hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <Download className="w-5 h-5 text-cyan-400" />
+                Tải CV (PDF)
+              </button>
             </div>
 
           </div>

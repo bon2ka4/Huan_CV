@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Gamepad2, Code2, Cpu, FolderKanban, Briefcase, Menu, X, Phone, Mail } from 'lucide-react';
+import { Gamepad2, Code2, Cpu, FolderKanban, Briefcase, Menu, X, Phone, Mail, Download } from 'lucide-react';
 import { personalData } from '../data';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleExportPDF = () => {
+    window.print();
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,12 +57,20 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Right Phone Contact Badge */}
+        {/* Right Phone Contact Badge & Export PDF */}
         <div className="hidden md:flex items-center gap-3">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800">
-            <Phone className="w-4 h-4 text-emerald-400" />
+          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800">
+            <Phone className="w-3.5 h-3.5 text-emerald-400" />
             <span>{personalData.phone}</span>
           </div>
+
+          <button
+            onClick={handleExportPDF}
+            className="no-print flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-md shadow-cyan-500/20 transition-all duration-200 cursor-pointer active:scale-95"
+          >
+            <Download className="w-4 h-4" />
+            Tải CV (PDF)
+          </button>
         </div>
 
         {/* Mobile menu button */}
