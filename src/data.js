@@ -118,7 +118,6 @@ export const experienceData = [
   {
     period: "Tháng 06/2022 - Hiện tại",
     role: "Developer Unity",
-    company: "Công ty CSC Mobi",
-    description: "Đảm nhiệm vai trò chính bảo trì, tối ưu, fix lỗi và phát triển content cho dòng game Plant và dự án Marble Match hợp tác với Tripledot Studios. Hỗ trợ phát triển UI, SDK (Ads, Tracking, Localization) và các tính năng ngoài luồng core gameplay."
+    company: "Công ty CSC Mobi"
   }
 ];

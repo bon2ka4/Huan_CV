@@ -75,9 +75,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <p className="text-sm text-slate-300 leading-relaxed">
-                {exp.description}
-              </p>
+              {exp.description && (
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  {exp.description}
+                </p>
+              )}
 
               {/* Responsibilities bullet points from CV */}
               <div className="space-y-2.5 pt-2">
