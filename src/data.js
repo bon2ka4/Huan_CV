@@ -75,6 +75,7 @@ export const projectsData = [
     id: "block-blaster",
     title: "Block Blaster",
     role: "Code Chính",
+    apkUrl: "https://drive.google.com/file/d/1iamqKlDwC0encpjV8lTVyY3dJjrNrcCc/view?usp=sharing",
     tagline: "Game giải đố chiến thuật màu sắc: Chọn khối tròn phù hợp để tự động phá huỷ các khối vuông phía trên, quản lý slot giới hạn và phá giải các blocker thông minh.",
     thumbnail: "./images/block_blaster.jpg",
     features: [

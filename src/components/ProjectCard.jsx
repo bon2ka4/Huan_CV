@@ -1,5 +1,5 @@
 import React from 'react';
-import { Gamepad2, Check, Play, Sparkles, Award } from 'lucide-react';
+import { Gamepad2, Check, Play, Sparkles, Award, Download } from 'lucide-react';
 
 export default function ProjectCard({ project, onPlayDemo }) {
   return (
@@ -62,7 +62,7 @@ export default function ProjectCard({ project, onPlayDemo }) {
         </div>
 
         {/* Tech Stack Pills */}
-        <div className="pt-4 border-t border-slate-800/80">
+        <div className="pt-4 border-t border-slate-800/80 space-y-4">
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech, idx) => (
               <span
@@ -73,6 +73,21 @@ export default function ProjectCard({ project, onPlayDemo }) {
               </span>
             ))}
           </div>
+
+          {/* Action Button: Tải Game APK */}
+          {project.apkUrl && (
+            <div className="pt-2 flex flex-wrap gap-3">
+              <a
+                href={project.apkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 shadow-lg shadow-emerald-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <Download className="w-4 h-4" />
+                Tải Game APK
+              </a>
+            </div>
+          )}
         </div>
 
       </div>
