@@ -15,14 +15,10 @@ export default function ProjectCard({ project, onPlayDemo }) {
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950 via-transparent to-transparent opacity-50" />
         
         {/* Top Badges */}
-        <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
-          <span className="px-3 py-1 rounded-full text-xs font-medium glass-panel border border-slate-700 text-cyan-300">
-            {project.category}
-          </span>
-
+        <div className="absolute top-4 right-4 z-10">
           {project.role && (
-            <span className="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950/90 border border-cyan-400/50 text-cyan-300 flex items-center gap-1.5 shadow-lg shadow-cyan-500/20">
-              <Award className="w-3.5 h-3.5 text-cyan-400" />
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-cyan-950/90 border border-cyan-400/60 text-cyan-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 tracking-wide">
+              <Award className="w-4 h-4 text-cyan-400" />
               {project.role}
             </span>
           )}
@@ -33,11 +29,18 @@ export default function ProjectCard({ project, onPlayDemo }) {
       <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
         <div className="space-y-4">
           <div>
-            <h3 className="font-heading font-bold text-2xl sm:text-3xl text-white group-hover:text-cyan-400 transition-colors">
-              {project.title}
-            </h3>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 p-[1px] shadow-lg shadow-orange-500/20 shrink-0">
+                <div className="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
+                  <Gamepad2 className="w-5 h-5 text-amber-400" />
+                </div>
+              </div>
+              <h3 className="font-heading font-extrabold text-3xl sm:text-4xl bg-gradient-to-r from-amber-300 via-orange-400 to-rose-400 bg-clip-text text-transparent tracking-tight">
+                {project.title}
+              </h3>
+            </div>
             
-            <p className="text-slate-300 text-sm mt-2 leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
               {project.tagline}
             </p>
           </div>

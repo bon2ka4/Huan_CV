@@ -75,7 +75,6 @@ export const projectsData = [
     id: "block-blaster",
     title: "Block Blaster",
     role: "Code Chính",
-    category: "Puzzle / Color Match & Strategy",
     tagline: "Game giải đố chiến thuật màu sắc: Chọn khối tròn phù hợp để tự động phá huỷ các khối vuông phía trên, quản lý slot giới hạn và phá giải các blocker thông minh.",
     thumbnail: "./images/block_blaster.jpg",
     features: [
