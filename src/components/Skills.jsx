@@ -67,10 +67,13 @@ export default function Skills() {
           {skillsData.map((cat, idx) => {
             const IconComponent = iconMap[cat.icon] || Cpu;
             const theme = categoryThemes[cat.icon] || categoryThemes.Cpu;
+            const isLastOdd = idx === skillsData.length - 1 && skillsData.length % 2 !== 0;
             return (
               <div
                 key={idx}
-                className="glass-card rounded-2xl p-6 sm:p-8 relative group transition-all duration-300 hover:-translate-y-1"
+                className={`glass-card rounded-2xl p-6 sm:p-8 relative group transition-all duration-300 hover:-translate-y-1 ${
+                  isLastOdd ? 'md:col-span-2 md:max-w-[calc(50%-1rem)] md:mx-auto w-full' : ''
+                }`}
               >
                 {/* Top Accent Gradient Line */}
                 <div className={`absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent ${theme.gradientLine} to-transparent opacity-60 group-hover:opacity-100 transition-all duration-300`} />
