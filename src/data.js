@@ -75,16 +75,16 @@ export const projectsData = [
     id: "block-blaster",
     title: "Block Blaster",
     role: "Code Chính",
-    category: "Color Match & Block Puzzle",
-    tagline: "Game giải đố chiến thuật màu sắc kết hợp cơ chế bắn phá khối tự động (Auto-Blast), quản lý khay chứa giới hạn và vượt chướng ngại vật đa dạng.",
+    category: "Puzzle / Color Match & Strategy",
+    tagline: "Game giải đố chiến thuật màu sắc: Chọn khối tròn phù hợp để tự động phá huỷ các khối vuông phía trên, quản lý slot giới hạn và phá giải các blocker thông minh.",
     thumbnail: "./images/block_blaster.jpg",
     features: [
-      "Đảm nhiệm vai trò code chính Core Gameplay & Cơ chế Auto-Blast: Xây dựng logic chọn bóng màu từ khay dưới (Tray Slots) để tự động kích hoạt đạn bắn phá các cụm khối gạch cùng màu trên bảng giải đố.",
-      "Hệ thống Quản lý Khay chứa & Thuật toán Game Over: Thiết kế thuật toán quản lý số lượng ô chứa giới hạn ở khay, xử lý logic hết nước đi (Out of moves / Fail state) khi khay đầy.",
-      "Hệ thống Chướng ngại vật (Blockers & Level System): Lập trình logic các khối đặc thù (Khối khóa, rào chắn, màn che, khối đổi màu...) và kiến trúc nạp cấu hình level hand-crafted.",
-      "Tối ưu hóa hiệu năng & Hiệu ứng bắt mắt (Juicy VFX): Xử lý hiệu ứng hạt nổ vỡ mãn nhãn, tia laser bắn mượt mà, áp dụng Object Pooling cho toàn bộ bóng, khối gạch và hạt VFX giúp game luôn đạt 60 FPS ổn định."
+      "Lập trình Core Gameplay (Chọn màu & Tự phá khối): Xây dựng logic người chơi chọn khối tròn màu để tự động kích hoạt cơ chế bắn phá chính xác các khối vuông cùng màu phía trên.",
+      "Cơ chế Quản lý Slot chứa giới hạn: Lập trình hệ thống giới hạn slot chứa khối tròn, thuật toán kiểm soát chiếm chỗ khi chọn sai màu và phát hiện trạng thái hết slot / Game Over.",
+      "Hệ thống Blocker thông minh & Cấp độ thử thách: Phát triển các loại khối chặn (blocker) độc đáo buộc người chơi tính toán trước nhiều bước để mở đường; thiết kế kiến trúc nạp cấp độ thử thách tăng dần.",
+      "Tối ưu hóa hiệu năng & Hiệu ứng phá khối (Juicy VFX): Lập trình hiệu ứng nổ phá khối cực mãn nhãn, âm thanh sống động, áp dụng Object Pooling cho khối tròn, khối vuông và hiệu ứng hạt giúp game luôn mượt mà 60 FPS."
     ],
-    techStack: ["Unity 2D/3D", "C# Gameplay", "Auto-Blast Mechanics", "Tray Slot System", "Object Pooling", "DoTween & VFX", "Level Architecture"]
+    techStack: ["Unity 2D/3D", "C# Gameplay", "Auto-Destroy System", "Slot Management", "Smart Blockers", "Object Pooling", "Juicy VFX & Sound"]
   }
 ];
 
