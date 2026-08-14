@@ -12,15 +12,40 @@ export default function ProjectCard({ project, onPlayDemo }) {
           alt={project.title}
           className="w-full h-full object-cover object-[center_38%] group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
         
         {/* Top Badges */}
         <div className="absolute top-4 right-4 z-10">
           {project.role && (
-            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-cyan-950/90 border border-cyan-400/60 text-cyan-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 tracking-wide">
+            <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-cyan-950/90 border border-cyan-400/60 text-cyan-300 flex items-center gap-2 shadow-lg shadow-cyan-500/25 tracking-wide backdrop-blur-md">
               <Award className="w-4 h-4 text-cyan-400" />
               {project.role}
             </span>
+          )}
+        </div>
+
+        {/* Thumbnail Action Buttons (Overlayed on bottom of the image) */}
+        <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-3 z-10">
+          {project.hasWebglDemo && (
+            <button
+              onClick={() => onPlayDemo(project)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-xl shadow-cyan-500/30 transition-all duration-300 hover:scale-[1.03] active:scale-95 cursor-pointer backdrop-blur-sm"
+            >
+              <Play className="w-4 h-4 fill-current" />
+              Chơi Thử Demo
+            </button>
+          )}
+
+          {project.apkUrl && (
+            <a
+              href={project.apkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm text-white bg-slate-950/80 border border-slate-700/80 hover:border-cyan-400 hover:bg-slate-900/90 hover:text-cyan-300 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-[1.03] active:scale-95 cursor-pointer"
+            >
+              <Download className="w-4 h-4 text-cyan-400" />
+              Tải Game APK
+            </a>
           )}
         </div>
       </div>
@@ -62,7 +87,7 @@ export default function ProjectCard({ project, onPlayDemo }) {
         </div>
 
         {/* Tech Stack Pills */}
-        <div className="pt-4 border-t border-slate-800/80 space-y-4">
+        <div className="pt-4 border-t border-slate-800/80">
           <div className="flex flex-wrap gap-2">
             {project.techStack.map((tech, idx) => (
               <span
@@ -72,31 +97,6 @@ export default function ProjectCard({ project, onPlayDemo }) {
                 #{tech}
               </span>
             ))}
-          </div>
-
-          {/* Action Buttons: Chơi Thử Demo & Tải Game APK */}
-          <div className="pt-2 flex flex-wrap items-center gap-3">
-            {project.hasWebglDemo && (
-              <button
-                onClick={() => onPlayDemo(project)}
-                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
-              >
-                <Play className="w-4 h-4 fill-current" />
-                Chơi Thử Demo
-              </button>
-            )}
-
-            {project.apkUrl && (
-              <a
-                href={project.apkUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-200 glass-panel border border-slate-700 hover:border-cyan-500/40 hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
-              >
-                <Download className="w-4 h-4 text-cyan-400" />
-                Tải Game APK
-              </a>
-            )}
           </div>
         </div>
 
