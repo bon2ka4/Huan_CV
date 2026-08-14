@@ -4,7 +4,7 @@ export const personalData = {
   subtitle: "Chuyên gia phát triển Mobile Games, WebGL và tối ưu hóa hiệu năng hệ thống (GPU Instancing, Memory Management & GC Free).",
   bio: "Với hơn 5+ năm kinh nghiệm trong ngành Game Development, tôi tập trung vào kiến trúc phần mềm sạch (SOLID, Composition), tối ưu hóa GPU/Memory cho các tựa game Mobile & WebGL quy mô lớn. Đam mê tạo ra các trải nghiệm chơi game mượt mà với 60 FPS ổn định.",
   location: "Việt Nam",
-  avatar: "https://api.dicebear.com/7.x/bottts/svg?seed=HuanUnityDev",
+  avatar: "./images/avatar.jpg",
   stats: [
     { label: "Năm kinh nghiệm", value: "5+" },
     { label: "Game dự án đã phát triển", value: "12+" },
