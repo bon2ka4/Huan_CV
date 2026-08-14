@@ -45,7 +45,7 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* Contact Details Display (No links as requested) */}
+            {/* Contact Details Display */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 max-w-xl mx-auto lg:mx-0">
               <div className="flex items-center gap-3 p-3 rounded-xl glass-card border border-slate-800">
                 <div className="w-8 h-8 rounded-lg bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
@@ -66,6 +66,16 @@ export default function Hero() {
                   <div className="text-xs font-semibold text-slate-200 truncate max-w-[180px]">{personalData.email}</div>
                 </div>
               </div>
+
+              <div className="sm:col-span-2 flex items-center gap-3 p-3 rounded-xl glass-card border border-slate-800">
+                <div className="w-8 h-8 rounded-lg bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div className="text-left">
+                  <div className="text-[11px] text-slate-400 font-mono">Địa chỉ</div>
+                  <div className="text-xs font-semibold text-slate-200">{personalData.address}</div>
+                </div>
+              </div>
             </div>
 
             {/* CTA Action Buttons */}
@@ -82,7 +92,7 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Profile Photo from CV */}
+          {/* Right Column: Clean Profile Photo from CV */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center">
             <div className="relative w-full max-w-sm">
               
@@ -90,24 +100,15 @@ export default function Hero() {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-purple-500 to-emerald-500 rounded-3xl blur-xl opacity-30 animate-pulse" />
               
               {/* Main Profile Card */}
-              <div className="relative glass-panel rounded-2xl p-6 border border-slate-700/50 space-y-6">
+              <div className="relative glass-panel rounded-2xl p-4 border border-slate-700/50 space-y-4">
                 
-                {/* Real CV Profile Photo */}
-                <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-cyan-400/40 shadow-xl bg-slate-900">
+                {/* Clean Real CV Profile Photo */}
+                <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden border border-cyan-400/30 shadow-xl bg-slate-900">
                   <img
                     src={personalData.avatar}
                     alt={personalData.name}
                     className="w-full h-full object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
-                  <div className="absolute bottom-3 left-3 right-3 glass-panel p-3 rounded-xl border border-slate-700/80">
-                    <h3 className="font-heading font-bold text-lg text-white">{personalData.name}</h3>
-                    <p className="text-xs text-cyan-400 font-mono">{personalData.title}</p>
-                    <div className="flex items-center gap-1.5 mt-1 text-[11px] text-slate-300">
-                      <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                      <span className="truncate">{personalData.address}</span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Stats Grid */}
