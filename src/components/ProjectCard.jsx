@@ -74,20 +74,30 @@ export default function ProjectCard({ project, onPlayDemo }) {
             ))}
           </div>
 
-          {/* Action Button: Tải Game APK */}
-          {project.apkUrl && (
-            <div className="pt-2 flex flex-wrap gap-3">
+          {/* Action Buttons: Chơi Thử Demo & Tải Game APK */}
+          <div className="pt-2 flex flex-wrap items-center gap-3">
+            {project.hasWebglDemo && (
+              <button
+                onClick={() => onPlayDemo(project)}
+                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+              >
+                <Play className="w-4 h-4 fill-current" />
+                Chơi Thử Demo
+              </button>
+            )}
+
+            {project.apkUrl && (
               <a
                 href={project.apkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-950 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 hover:from-emerald-300 hover:to-cyan-300 shadow-lg shadow-emerald-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-slate-200 glass-panel border border-slate-700 hover:border-cyan-500/40 hover:bg-slate-800/80 hover:text-cyan-400 transition-all duration-300 hover:scale-[1.02] active:scale-95 cursor-pointer"
               >
-                <Download className="w-4 h-4" />
+                <Download className="w-4 h-4 text-cyan-400" />
                 Tải Game APK
               </a>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
       </div>
