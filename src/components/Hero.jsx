@@ -1,3 +1,5 @@
+import React from 'react';
+import { personalData } from '../data';
 import { Gamepad2, Phone, Mail, MapPin, Award, Cpu, ShieldCheck, ArrowRight, GraduationCap, Briefcase, Download } from 'lucide-react';
 
 export default function Hero() {
