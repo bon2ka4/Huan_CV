@@ -1,114 +1,110 @@
 import React from 'react';
 import { experienceData, educationData } from '../data';
-import { Briefcase, Building2, GraduationCap, Award, CheckCircle2, Rocket } from 'lucide-react';
+import { Briefcase, Building2, GraduationCap, CheckCircle2 } from 'lucide-react';
 
 export default function Experience() {
+  const timelineItems = [
+    {
+      id: "work",
+      type: "work",
+      period: experienceData[0]?.period || "Tháng 06/2022 - Hiện tại",
+      role: experienceData[0]?.role || "Developer Unity",
+      organization: experienceData[0]?.company || "Công ty CSC Mobi",
+      icon: Briefcase,
+      badgeColor: "bg-cyan-950 border-cyan-500/30 text-cyan-400",
+      iconBg: "border-cyan-400 text-cyan-400 shadow-cyan-500/20",
+      bullets: [
+        "Đảm nhiệm vai trò chính trong việc bảo trì, tối ưu, fix lỗi và thêm content cho các dự án Plant Series (Merge Plant, Zombie Kingdom,...).",
+        "Được làm việc cùng với đối tác Tripledot Studios với vai trò chính trong việc bảo trì, tối ưu, fix lỗi và phát triển content cho dự án Marble Match.",
+        "Đảm nhiệm vai trò support các dự án khác: UI, tích hợp SDK, tích hợp Ads, Analytics Tracking, Localization (Đa ngôn ngữ), và các tính năng ngoài luồng core gameplay (Booster, Daily rewards,...).",
+        "Đảm nhiệm vai trò code chính cho các dự án game mới và game demo."
+      ]
+    },
+    {
+      id: "education",
+      type: "education",
+      period: educationData.period,
+      role: educationData.degree,
+      subtitle: educationData.major,
+      organization: educationData.school,
+      icon: GraduationCap,
+      badgeColor: "bg-purple-950 border-purple-500/30 text-purple-400",
+      iconBg: "border-purple-400 text-purple-400 shadow-purple-500/20",
+      bullets: [
+        educationData.description
+      ]
+    }
+  ];
+
   return (
-    <section id="experience" className="py-24 relative overflow-hidden bg-slate-950">
+    <section id="experience" className="py-20 relative overflow-hidden bg-slate-950">
       
       {/* Ambient background glow */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-400 text-xs font-mono">
-            <Briefcase className="w-3.5 h-3.5" />
-            KINH NGHIỆM LÀM VIỆC & HỌC VẤN
-          </div>
-
-          <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white">
-            Hành Trình Thực Chiến & Bằng Cấp
-          </h2>
-
-          <p className="text-slate-400 text-sm sm:text-base">
-            Kinh nghiệm phát triển Game tại CSC Mobi, hợp tác với Tripledot Studios & nền tảng học vấn kỹ sư phần mềm.
-          </p>
-        </div>
-
-        {/* Education Highlight Card */}
-        <div className="max-w-4xl mx-auto mb-12 glass-panel p-6 sm:p-8 rounded-2xl border border-cyan-500/30 relative">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-4 mb-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-500/40 flex items-center justify-center text-cyan-400 shrink-0">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">HỌC VẤN CHUYÊN NGÀNH</span>
-                <h3 className="font-heading font-bold text-xl text-white">{educationData.school}</h3>
-              </div>
-            </div>
-
-            <span className="text-xs font-mono px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-cyan-300">
-              {educationData.period}
-            </span>
-          </div>
-
-          <div className="space-y-2">
-            <div className="text-sm font-semibold text-emerald-400">
-              {educationData.degree} — <span className="text-slate-300 font-normal">{educationData.major}</span>
-            </div>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              {educationData.description}
-            </p>
-          </div>
-        </div>
-
-        {/* Work Experience Section */}
-        <div className="max-w-4xl mx-auto space-y-8">
-          {experienceData.map((exp, idx) => (
-            <div key={idx} className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
-                <div>
-                  <span className="text-xs font-mono font-semibold text-cyan-400 px-2.5 py-0.5 rounded-full bg-cyan-950 border border-cyan-500/30">
-                    {exp.period}
-                  </span>
-                  <h3 className="font-heading font-bold text-2xl text-white mt-2">
-                    {exp.role}
-                  </h3>
-                </div>
+        {/* Unified Timeline Container */}
+        <div className="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:-translate-x-px before:w-0.5 before:bg-gradient-to-b before:from-cyan-500/80 via-purple-500/40 before:to-transparent">
+          {timelineItems.map((item, idx) => {
+            const IconComp = item.icon;
+            return (
+              <div
+                key={item.id}
+                className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group ${
+                  idx % 2 === 0 ? 'md:flex-row-reverse' : ''
+                }`}
+              >
                 
-                <div className="flex items-center gap-2 text-sm text-slate-300 font-medium glass-panel px-3 py-1.5 rounded-xl border border-slate-800">
-                  <Building2 className="w-4 h-4 text-cyan-400" />
-                  {exp.company}
+                {/* Timeline Icon Badge */}
+                <div className={`flex items-center justify-center w-9 h-9 rounded-full bg-slate-950 border-2 shadow-lg z-10 shrink-0 absolute left-4 sm:left-1/2 -translate-x-1/2 ${item.iconBg}`}>
+                  <IconComp className="w-4 h-4" />
                 </div>
+
+                {/* Timeline Card */}
+                <div className="w-[calc(100%-3rem)] sm:w-[calc(50%-2.5rem)] ml-12 sm:ml-0 glass-card p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/30 transition-all duration-300 space-y-4">
+                  
+                  {/* Period & Organization Header */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-4">
+                    <div>
+                      <span className={`text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full border ${item.badgeColor}`}>
+                        {item.period}
+                      </span>
+                      <h3 className="font-heading font-bold text-xl sm:text-2xl text-white mt-2">
+                        {item.role}
+                      </h3>
+                      {item.subtitle && (
+                        <div className="text-xs text-emerald-400 font-medium mt-0.5">
+                          {item.subtitle}
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-300 font-medium glass-panel px-3 py-1.5 rounded-xl border border-slate-800 self-start sm:self-auto">
+                      {item.type === 'work' ? (
+                        <Building2 className="w-4 h-4 text-cyan-400 shrink-0" />
+                      ) : (
+                        <GraduationCap className="w-4 h-4 text-purple-400 shrink-0" />
+                      )}
+                      <span>{item.organization}</span>
+                    </div>
+                  </div>
+
+                  {/* Bullet Points */}
+                  <div className="space-y-2.5 pt-1">
+                    {item.bullets.map((bullet, bIdx) => (
+                      <div key={bIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                        <span>{bullet}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                </div>
+
               </div>
-
-              {exp.description && (
-                <p className="text-sm text-slate-300 leading-relaxed">
-                  {exp.description}
-                </p>
-              )}
-
-              {/* Responsibilities bullet points from CV */}
-              <div className="space-y-2.5 pt-2">
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-semibold block">
-                  Vai trò & Nhiệm vụ chính:
-                </span>
-                
-                <div className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Đảm nhiệm vai trò chính trong việc bảo trì, tối ưu, fix lỗi và thêm content cho các dự án <strong>Plant Series</strong> (Merge Plant, Zombie Kingdom,...).</span>
-                </div>
-
-                <div className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Được làm việc cùng với đối tác quốc tế <strong>Tripledot Studios</strong> với vai trò chính trong việc bảo trì, tối ưu, fix lỗi và phát triển content cho dự án <strong>Marble Match</strong>.</span>
-                </div>
-
-                <div className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Đảm nhiệm vai trò support các dự án khác: UI, tích hợp SDK, tích hợp Ads, Analytics Tracking, Localization (Đa ngôn ngữ), và các tính năng ngoài luồng core gameplay (Booster, Daily rewards,...).</span>
-                </div>
-
-                <div className="flex items-start gap-3 text-xs sm:text-sm text-slate-300">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>Đảm nhiệm vai trò code chính cho các dự án game mới và game demo.</span>
-                </div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

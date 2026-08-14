@@ -47,7 +47,7 @@ export default function Hero() {
 
             {/* Core Competencies Badges */}
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start pt-2">
-              {["Unity 2D/3D", "Casual & Hybrid-casual", "Tripledot Studios", "Optimization", "Fix Bugs", "Ads & Tracking SDK"].map((tag) => (
+              {["Unity 2D/3D", "Casual & Hybrid-casual", "Optimization", "Fix Bugs", "Ads & Tracking SDK"].map((tag) => (
                 <span key={tag} className="px-3 py-1 rounded-lg text-xs font-mono bg-slate-900/80 border border-slate-800 text-slate-300">
                   #{tag}
                 </span>
