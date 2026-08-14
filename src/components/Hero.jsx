@@ -128,18 +128,20 @@ export default function Hero() {
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 gap-3">
-                  {personalData.stats.map((stat, idx) => (
-                    <div key={idx} className="bg-slate-900/70 rounded-xl p-3 border border-slate-800/80 text-center">
-                      <div className="font-heading font-extrabold text-xl bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-                        {stat.value}
+                {personalData.stats && personalData.stats.length > 0 && (
+                  <div className="grid grid-cols-2 gap-3">
+                    {personalData.stats.map((stat, idx) => (
+                      <div key={idx} className="bg-slate-900/70 rounded-xl p-3 border border-slate-800/80 text-center">
+                        <div className="font-heading font-extrabold text-xl bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                          {stat.value}
+                        </div>
+                        <div className="text-[11px] text-slate-400 mt-0.5 font-medium leading-tight">
+                          {stat.label}
+                        </div>
                       </div>
-                      <div className="text-[11px] text-slate-400 mt-0.5 font-medium leading-tight">
-                        {stat.label}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
 
               </div>
             </div>

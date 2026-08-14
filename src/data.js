@@ -7,13 +7,6 @@ export const personalData = {
   address: "46 ngõ 131 thôn An Bình, An Khánh, Hà Nội",
   phone: "+84 944617420",
   email: "hoangquanghuan9x@gmail.com",
-  avatar: "./images/avatar.png",
-  stats: [
-    { label: "Năm kinh nghiệm", value: "4+" },
-    { label: "Dòng Game chuyên sâu", value: "Casual & Hybrid" },
-    { label: "Dự án Quốc tế", value: "Tripledot & CSC" },
-    { label: "Target FPS Mượt mà", value: "60 FPS" }
-  ]
 };
 
 export const educationData = {
