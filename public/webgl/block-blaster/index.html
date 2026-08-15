@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" style="width: 100%; height: 100%; overflow: hidden; margin: 0; padding: 0;">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,24 +7,19 @@
     <title>Unity WebGL Player | Block Blaster</title>
     <style>
       * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
       }
       html, body {
         width: 100%;
         height: 100%;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
         background: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       #unity-canvas {
+        width: 100%;
         height: 100%;
-        aspect-ratio: 9 / 16;
-        max-width: 100%;
-        max-height: 100%;
         display: block;
         background: #231F20;
       }
@@ -41,8 +36,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "CSCMobi",
         productName: "Block Blaster",
-        productVersion: "0.1.10",
-        matchWebGLToCanvasSize: false
+        productVersion: "0.1.10"
       });
     </script>
   </body>

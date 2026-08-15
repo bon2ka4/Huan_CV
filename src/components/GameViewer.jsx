@@ -19,13 +19,13 @@ export default function GameViewer({ project, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-slate-950/90 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/90 backdrop-blur-md animate-in fade-in duration-200">
       
-      {/* Modal Container */}
-      <div className="relative w-full max-w-5xl bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden max-h-[90vh]">
+      {/* Modal Container (Smartphone Frame for Portrait Mobile Game) */}
+      <div className="relative w-full max-w-[460px] sm:max-w-[490px] h-[92vh] max-h-[860px] bg-slate-900 border border-slate-700/80 rounded-3xl shadow-2xl flex flex-col overflow-hidden shadow-cyan-500/10">
         
         {/* Header Bar */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-slate-950/80">
+        <div className="flex items-center justify-between px-5 py-3.5 border-b border-slate-800 bg-slate-950/90 shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-cyan-950 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
               <Gamepad2 className="w-4 h-4" />
@@ -124,7 +124,7 @@ export default function GameViewer({ project, onClose }) {
         </div>
 
         {/* Modal Footer Controls Info */}
-        <div className="px-6 py-3 border-t border-slate-800 bg-slate-950/80 flex items-center justify-between text-xs text-slate-400">
+        <div className="px-5 py-2.5 border-t border-slate-800 bg-slate-950/90 shrink-0 flex items-center justify-between text-xs text-slate-400">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5">
               <Info className="w-3.5 h-3.5 text-cyan-400" />
