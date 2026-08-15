@@ -132,7 +132,7 @@ export default function GameViewer({ project, onClose }) {
             </span>
           </div>
           <div>
-            Nền tảng: <span className="text-slate-200 font-mono">Unity WebGL (URP)</span>
+            Nền tảng: <span className="text-slate-200 font-mono">Unity WebGL</span>
           </div>
         </div>
 
