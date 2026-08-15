@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109223637111",
+    "project_id": "g74-block-blaster",
+    "storage_bucket": "g74-block-blaster.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109223637111:android:0c766b18e0fa724424d672",
+        "android_client_info": {
+          "package_name": "com.cscmobi.block.blaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR6P2pQz-JBw2qCs8BdtTqQwhqH2HZtOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

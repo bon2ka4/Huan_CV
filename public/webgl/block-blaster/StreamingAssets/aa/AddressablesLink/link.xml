@@ -1,0 +1,158 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="BlastJams.AlgorithmController" preserve="all" />
+    <type fullname="BlastJams.BarrierExplore" preserve="all" />
+    <type fullname="BlastJams.Block" preserve="all" />
+    <type fullname="BlastJams.BlockerFontOfHandle" preserve="all" />
+    <type fullname="BlastJams.BlockerGenerator" preserve="all" />
+    <type fullname="BlastJams.BlockerHandle" preserve="all" />
+    <type fullname="BlastJams.BlockGenerator" preserve="all" />
+    <type fullname="BlastJams.BlockPoint" preserve="all" />
+    <type fullname="BlastJams.BlockSelector" preserve="all" />
+    <type fullname="BlastJams.Board" preserve="all" />
+    <type fullname="BlastJams.Bullet" preserve="all" />
+    <type fullname="BlastJams.CheckSamePosition" preserve="all" />
+    <type fullname="BlastJams.ColorProfile" preserve="all" />
+    <type fullname="BlastJams.ColorShooterGenerator" preserve="all" />
+    <type fullname="BlastJams.CurtainGenerate" preserve="all" />
+    <type fullname="BlastJams.DifficultyLevelMaterialRenderer" preserve="all" />
+    <type fullname="BlastJams.DifficultyLevelSprite" preserve="all" />
+    <type fullname="BlastJams.DoorSelector" preserve="all" />
+    <type fullname="BlastJams.EffectBreakBlock" preserve="all" />
+    <type fullname="BlastJams.EffectCurtain" preserve="all" />
+    <type fullname="BlastJams.ExtraSlotSelecter" preserve="all" />
+    <type fullname="BlastJams.FixBlock" preserve="all" />
+    <type fullname="BlastJams.FixLevel" preserve="all" />
+    <type fullname="BlastJams.FixShooter" preserve="all" />
+    <type fullname="BlastJams.Hidden" preserve="all" />
+    <type fullname="BlastJams.Idle" preserve="all" />
+    <type fullname="BlastJams.InforBlockAndShooter" preserve="all" />
+    <type fullname="BlastJams.ItemPoint" preserve="all" />
+    <type fullname="BlastJams.LevelGenerator" preserve="all" />
+    <type fullname="BlastJams.MaterialHandle" preserve="all" />
+    <type fullname="BlastJams.MeshShooterGenerate" preserve="all" />
+    <type fullname="BlastJams.MeshShooterProfile" preserve="all" />
+    <type fullname="BlastJams.MissionComplete" preserve="all" />
+    <type fullname="BlastJams.MotionControl" preserve="all" />
+    <type fullname="BlastJams.OutlineHandle" preserve="all" />
+    <type fullname="BlastJams.OutlineProfile" preserve="all" />
+    <type fullname="BlastJams.RainbowGenerator" preserve="all" />
+    <type fullname="BlastJams.RainbowHandle" preserve="all" />
+    <type fullname="BlastJams.Run" preserve="all" />
+    <type fullname="BlastJams.Shoot" preserve="all" />
+    <type fullname="BlastJams.Shooter" preserve="all" />
+    <type fullname="BlastJams.ShooterGenerator" preserve="all" />
+    <type fullname="BlastJams.ShooterPick" preserve="all" />
+    <type fullname="BlastJams.ShooterSelector" preserve="all" />
+    <type fullname="BlastJams.ShooterShootAnimationHandle" preserve="all" />
+    <type fullname="BlastJams.Slot" preserve="all" />
+    <type fullname="BlastJams.SlotBottomGenerator" preserve="all" />
+    <type fullname="BlastJams.SlotSelecter" preserve="all" />
+    <type fullname="BlastJams.TextDisplayHandle" preserve="all" />
+    <type fullname="BlastJams.TilemapInfor" preserve="all" />
+    <type fullname="BlastJams.TowerExplosionAround" preserve="all" />
+    <type fullname="BlastJams.UpdateMaterialAllBlock" preserve="all" />
+    <type fullname="BlastJams.WaitShoot" preserve="all" />
+    <type fullname="DOTweenWrapper.CountDownDeActive" preserve="all" />
+    <type fullname="Emoji" preserve="all" />
+    <type fullname="Essensial.Core.CameraFacingBillboard" preserve="all" />
+    <type fullname="InteractableCollider" preserve="all" />
+    <type fullname="Pixelplacement.Initialization" preserve="all" />
+    <type fullname="Pixelplacement.State" preserve="all" />
+    <type fullname="Pixelplacement.StateMachine" preserve="all" />
+    <type fullname="BlastJams.BlockColor" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.BlockPointList" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.ColorTypes" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.MeshShooter" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.OutlineColor" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.InforCellRow" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.InforRow" preserve="nothing" serialized="true" />
+    <type fullname="Pixelplacement.GameObjectEvent" preserve="nothing" serialized="true" />
+    <type fullname="BlastJams.InforShooterOfBlocker" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="spine-unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Spine.Unity.SkeletonDataAsset" preserve="all" />
+    <type fullname="Spine.Unity.SpineAtlasAsset" preserve="all" />
+    <type fullname="Spine.Unity.BlendModeMaterials" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.2D.Tilemap.Extras, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.RuleTile" preserve="all" />
+    <type fullname="UnityEngine.RuleTile/TilingRule" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshPro" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[BlastJams.TypeLose]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[System.Collections.Generic.List`1[UnityEngine.Vector3]]" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Grid" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Tilemaps.Tilemap" preserve="all" />
+    <type fullname="UnityEngine.Tilemaps.TilemapRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreFontEngineModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI">
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>

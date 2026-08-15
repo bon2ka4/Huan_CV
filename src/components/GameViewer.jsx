@@ -68,7 +68,7 @@ export default function GameViewer({ project, onClose }) {
         </div>
 
         {/* WebGL Viewer / Main Content */}
-        <div className="relative flex-1 min-h-[420px] bg-black flex items-center justify-center">
+        <div className="relative flex-1 min-h-[500px] max-h-[85vh] bg-slate-950 flex items-center justify-center p-2 sm:p-4 overflow-hidden">
           
           {project.hasWebglDemo ? (
             <>
@@ -79,7 +79,7 @@ export default function GameViewer({ project, onClose }) {
                     Đang nạp Unity WebGL Engine...
                   </p>
                   <p className="text-xs text-slate-500">
-                    Vui lòng chờ trong giây lát (WebGL Brotli Decompression)
+                    Vui lòng chờ giây lát trong khi trình duyệt khởi tạo WebGL
                   </p>
                 </div>
               )}
@@ -88,7 +88,7 @@ export default function GameViewer({ project, onClose }) {
                 id="webgl-iframe"
                 src={project.webglPath}
                 title={project.title}
-                className="w-full h-full min-h-[480px] border-0"
+                className="w-full max-w-[540px] h-[720px] max-h-[75vh] border-0 rounded-xl shadow-2xl bg-black"
                 onLoad={() => setLoading(false)}
                 allow="fullscreen; autoplay; encrypted-media"
               />
