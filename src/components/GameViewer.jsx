@@ -68,7 +68,7 @@ export default function GameViewer({ project, onClose }) {
         </div>
 
         {/* WebGL Viewer / Main Content */}
-        <div className="relative flex-1 min-h-[500px] max-h-[85vh] bg-slate-950 flex items-center justify-center p-2 sm:p-4 overflow-hidden">
+        <div className="relative flex-1 h-[78vh] sm:h-[82vh] bg-slate-950 flex items-center justify-center p-0 overflow-hidden">
           
           {project.hasWebglDemo ? (
             <>
@@ -88,7 +88,7 @@ export default function GameViewer({ project, onClose }) {
                 id="webgl-iframe"
                 src={project.webglPath}
                 title={project.title}
-                className="w-full max-w-[540px] h-[720px] max-h-[75vh] border-0 rounded-xl shadow-2xl bg-black"
+                className="w-full h-full border-0 bg-black"
                 onLoad={() => setLoading(false)}
                 allow="fullscreen; autoplay; encrypted-media"
               />
