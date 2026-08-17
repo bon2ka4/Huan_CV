@@ -94,6 +94,7 @@ export const projectsData = [
     role: "Code Chính",
     hasWebglDemo: false,
     webglPath: "./webgl/block-match-3d/index.html",
+    apkUrl: "https://drive.google.com/file/d/1HXdWy5Y4gtXK3Rur8bWiOVceeZZu5auc/view?usp=sharing",
     tagline: "Game giải đố Match-3D kết hợp cơ chế Đoàn tàu (Train Slots) và cốt truyện vượt khó: Thu thập khối màu nạp vào các toa tàu, vượt chướng ngại vật tường đếm số để trang hoàng phòng ốc ấm cúng.",
     thumbnail: "./images/block_match_3d.webp",
     features: [
