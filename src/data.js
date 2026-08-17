@@ -87,6 +87,23 @@ export const projectsData = [
       "Tối ưu hóa hiệu năng & Hiệu ứng phá khối (Juicy VFX): Lập trình hiệu ứng nổ phá khối cực mãn nhãn, âm thanh sống động, áp dụng Object Pooling cho khối tròn, khối vuông và hiệu ứng hạt giúp game luôn mượt mà 60 FPS."
     ],
     techStack: ["Unity 2D/3D", "C# Gameplay", "Auto-Destroy System", "Slot Management", "Smart Blockers", "Object Pooling", "Juicy VFX & Sound"]
+  },
+  {
+    id: "block-match-3d",
+    title: "Block Match 3D",
+    role: "Code Chính",
+    hasWebglDemo: false,
+    webglPath: "./webgl/block-match-3d/index.html",
+    tagline: "Game giải đố Match-3D kết hợp cơ chế Đoàn tàu (Train Slots) và cốt truyện vượt khó: Thu thập khối màu nạp vào các toa tàu, vượt chướng ngại vật tường đếm số để trang hoàng phòng ốc ấm cúng.",
+    thumbnail: "./images/block_match_3d.webp",
+    features: [
+      "Lập trình Core Gameplay (Match-3 & Train Slot System): Xây dựng logic chọn khối 3D trên bàn cờ, cơ chế di chuyển mượt mà vào khay chứa 7 ô và thuật toán tự động nạp khối màu vào các toa tàu chạy trên đường ray theo số lượng yêu cầu.",
+      "Hệ thống Chướng ngại vật (Numbered Wall Layers): Lập trình logic các lớp tường chặn số đếm (7, 5, 15...) buộc người chơi tính toán chiến thuật bóc tách từng lớp khối theo thứ tự ưu tiên.",
+      "Cơ chế Kiểm soát Game Over & Quản lý Khay: Thiết kế thuật toán phát hiện trạng thái hết slot chứa khi khay bị đầy mà chưa khớp được màu toa tàu, xử lý Fail State chính xác.",
+      "Tích hợp Cốt truyện & Meta Decor (Room Renovation): Xây dựng hệ thống phân cảnh cốt truyện giúp đỡ nhân vật, quản lý tài nguyên thưởng sau màn chơi để mở khóa nội thất, lò sưởi và trang trí phòng khách.",
+      "Tối ưu hóa hiệu năng & Hiệu ứng (Zero GC & DoTween): Áp dụng Object Pooling cho hàng trăm khối 3D, toa tàu và hiệu ứng hạt văng nổ, đảm bảo duy trì 60 FPS ổn định trên mọi thiết bị mobile."
+    ],
+    techStack: ["Unity 3D", "C# Gameplay", "Train Slot System", "Numbered Blockers", "Home Decor Meta", "Object Pooling", "DoTween & VFX"]
   }
 ];
 
