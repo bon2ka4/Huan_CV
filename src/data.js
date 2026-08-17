@@ -141,6 +141,24 @@ export const projectsData = [
       "Tối ưu hóa Hiệu năng & Hoạt họa Mượt mà (Zero GC & Pooling): Áp dụng Object Pooling cho hàng trăm Alien tí hon, cổng portal phát sáng và hiệu ứng chùm sáng tia UFO, tối ưu Draw Calls đạt 60 FPS mượt mà."
     ],
     techStack: ["Unity 2D/3D", "C# Gameplay", "Portal Graph System", "Pathfinding Algorithm", "UFO Color Matching", "Queue Management", "Object Pooling"]
+  },
+  {
+    id: "nut-sort-factory",
+    title: "Nut Sort Factory",
+    role: "Code Chính",
+    hasWebglDemo: false,
+    webglPath: "./webgl/nut-sort-factory/index.html",
+    apkUrl: "https://drive.google.com/file/d/1nlYAUN-1ZtagUc2f0DJ6JankD9HhF1Qa/view?usp=sharing",
+    tagline: "Game giải đố phân loại đai ốc trên băng chuyền động lực: Thao tác đưa các đai ốc (Nuts) vào đúng bulong tương ứng, quản lý tải trọng băng chuyền và giải phóng các cột ốc bí ẩn.",
+    thumbnail: "./images/nut_sort_factory.webp",
+    features: [
+      "Lập trình Core Gameplay (Conveyor Movement & Nut-to-Bolt Routing): Xây dựng hệ thống băng chuyền chuyển động liên tục (Conveyor Belt Physics/Spline System), cơ chế nhặt đai ốc và thuật toán tự động dẫn hướng đai ốc đến đúng trụ bulong cùng màu/hình dạng.",
+      "Cơ chế Thử thách Đa dạng (Mystery Layers & Mixed Towers): Lập trình các lớp đai ốc ẩn dấu hỏi (Hidden Mystery Nuts), trụ bulong yêu cầu đa màu theo thứ tự nghiêm ngặt và hệ thống khóa bulong liên hoàn (Locked Bolts).",
+      "Quản lý Giới hạn Băng Chuyền (Conveyor Capacity & Jam Detection): Thiết kế bộ đếm tải trọng ô chứa trên băng chuyền (0/12 Slots), thuật toán phát hiện tắc nghẽn (Belt Jam) và kích hoạt trạng thái Game Over khi hết chỗ lưu thông.",
+      "Hệ thống Power-Up & Cứu Nguy (Nut Blast & Extra Slot): Xây dựng tính năng kích nổ phá hủy nhanh trụ bulong (Nut Blast) và mở rộng ô đệm băng chuyền (Extra Slot) giúp giải phóng đường đi trong các màn chơi khó.",
+      "Tối ưu hóa Hiệu năng 3D & Spline Path (Zero GC & Pooling): Áp dụng Object Pooling cho toàn bộ các loại ốc 3D, bulong và hiệu ứng lắp ráp; tối ưu tính toán đường cong Spline Path giúp game chạy 60 FPS mượt mà trên mobile."
+    ],
+    techStack: ["Unity 3D", "C# Gameplay", "Conveyor Spline System", "Color & Shape Matching", "Belt Capacity Management", "Object Pooling", "DoTween & Juicy VFX"]
   }
 ];
 
