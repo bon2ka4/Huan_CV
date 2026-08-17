@@ -51,7 +51,7 @@ export default function App() {
             </div>
 
             {/* Projects Vertical Stack */}
-            <div className="flex flex-col space-y-12 max-w-6xl mx-auto">
+            <div className="flex flex-col space-y-12 max-w-4xl mx-auto">
               {filteredProjects.map((project) => (
                 <ProjectCard
                   key={project.id}
