@@ -50,8 +50,8 @@ export default function App() {
               </h2>
             </div>
 
-            {/* Projects Cards Grid */}
-            <div className={`grid grid-cols-1 ${filteredProjects.length === 1 ? 'max-w-4xl mx-auto' : filteredProjects.length === 2 ? 'lg:grid-cols-2 max-w-6xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-3'} gap-8`}>
+            {/* Projects Vertical Stack */}
+            <div className="flex flex-col space-y-12 max-w-6xl mx-auto">
               {filteredProjects.map((project) => (
                 <ProjectCard
                   key={project.id}
