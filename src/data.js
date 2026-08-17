@@ -7,7 +7,7 @@ export const personalData = {
   address: "46 ngõ 131 thôn An Bình, An Khánh, Hà Nội",
   phone: "+84 944617420",
   email: "hoangquanghuan9x@gmail.com",
-  avatar: "./images/avatar.png"
+  avatar: "./images/avatar.webp"
 };
 
 export const educationData = {
@@ -25,18 +25,18 @@ export const skillsData = [
     skills: [
       { name: "Unity & C# Gameplay Programming" },
       { name: "Cấu trúc OOP & Clean Code" },
-      { name: "Xử lý Vật lý (Physics 2D/3D) & Animation" },
-      { name: "UI Canvas & Layout Optimization" }
+      { name: "Custom Editors & Tooling" },
+      { name: "Scriptable Objects Architecture" }
     ]
   },
   {
-    category: "Kiến trúc Game (Architecture)",
-    icon: "Boxes",
+    category: "Kiến trúc Game (Game Architecture)",
+    icon: "Layers",
     skills: [
-      { name: "Finite State Machine (FSM) Gameplay & AI" },
+      { name: "Finite State Machine (FSM)" },
       { name: "Hệ thống Modular (Modular Systems)" },
-      { name: "ScriptableObject Data Architecture" },
-      { name: "Save/Load Data (JSON / PlayerPrefs)" }
+      { name: "Event-Driven Architecture" },
+      { name: "Singleton & Service Locator Patterns" }
     ]
   },
   {
@@ -79,7 +79,7 @@ export const projectsData = [
     webglPath: "./webgl/block-blaster/index.html",
     apkUrl: "https://drive.google.com/file/d/1iamqKlDwC0encpjV8lTVyY3dJjrNrcCc/view?usp=sharing",
     tagline: "Game giải đố chiến thuật màu sắc: Chọn khối tròn phù hợp để tự động phá huỷ các khối vuông phía trên, quản lý slot giới hạn và phá giải các blocker thông minh.",
-    thumbnail: "./images/block_blaster.jpg",
+    thumbnail: "./images/block_blaster.webp",
     features: [
       "Lập trình Core Gameplay (Chọn màu & Tự phá khối): Xây dựng logic người chơi chọn khối tròn màu để tự động kích hoạt cơ chế bắn phá chính xác các khối vuông cùng màu phía trên.",
       "Cơ chế Quản lý Slot chứa giới hạn: Lập trình hệ thống giới hạn slot chứa khối tròn, thuật toán kiểm soát chiếm chỗ khi chọn sai màu và phát hiện trạng thái hết slot / Game Over.",

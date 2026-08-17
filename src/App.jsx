@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import ProjectCard from './components/ProjectCard';
 import Experience from './components/Experience';
-import GameViewer from './components/GameViewer';
 import Footer from './components/Footer';
 import { projectsData } from './data';
 import { Gamepad2, Sparkles, Filter } from 'lucide-react';
+
+const GameViewer = lazy(() => import('./components/GameViewer'));
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -72,10 +73,16 @@ export default function App() {
 
       {/* Modal Unity WebGL Game Viewer */}
       {selectedProject && (
-        <GameViewer
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
+        <Suspense fallback={
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 backdrop-blur-md">
+            <div className="w-12 h-12 border-4 border-cyan-500/30 border-t-cyan-400 rounded-full animate-spin" />
+          </div>
+        }>
+          <GameViewer
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        </Suspense>
       )}
 
     </div>

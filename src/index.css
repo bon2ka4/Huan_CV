@@ -64,6 +64,29 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  .glass-panel {
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .glass-card {
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* GPU acceleration & skip offscreen layout calculation for 60/120 FPS scrolling */
+  #skills,
+  #projects,
+  #experience {
+    content-visibility: auto;
+    contain-intrinsic-size: 700px;
+  }
+}
+
 /* Print styles for exporting clean PDF */
 @media print {
   header,
