@@ -126,7 +126,7 @@ export default function Hero() {
                   <img
                     src={personalData.avatar}
                     alt={personalData.name}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-bottom"
                   />
                 </div>
 
