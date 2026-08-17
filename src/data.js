@@ -105,6 +105,24 @@ export const projectsData = [
       "Tối ưu hóa hiệu năng & Hiệu ứng (Zero GC & DoTween): Áp dụng Object Pooling cho hàng trăm khối 3D, toa tàu và hiệu ứng hạt văng nổ, đảm bảo duy trì 60 FPS ổn định trên mọi thiết bị mobile."
     ],
     techStack: ["Unity 3D", "C# Gameplay", "Train Slot System", "Numbered Blockers", "Home Decor Meta", "Object Pooling", "DoTween & VFX"]
+  },
+  {
+    id: "my-seat",
+    title: "My Seat: Last Person",
+    role: "Code Chính",
+    hasWebglDemo: false,
+    webglPath: "./webgl/my-seat/index.html",
+    apkUrl: "https://drive.google.com/file/d/1xkXUMCb7ZoNX1N07ct9v1Lh_Bcf5HqgZ/view?usp=sharing",
+    tagline: "Game giải đố suy luận logic chỗ ngồi: Phân tích manh mối ngữ cảnh để xếp từng nhân vật vào đúng vị trí ghế và tìm ra người cuối cùng ngồi xuống trong lớp học, xe buýt, quán café.",
+    thumbnail: "./images/my_seat.webp",
+    features: [
+      "Lập trình Hệ thống Giải đố Suy luận theo Luật (Rule-based Logic Engine): Xây dựng engine phân tích tập luật và manh mối (Clues System), tự động đối soát logic vị trí tương quan giữa các nhân vật và đồ vật trên bàn/ghế.",
+      "Cơ chế Kéo-Thả (Drag & Drop) & Biểu cảm Nhân vật Đa trạng thái: Lập trình tương tác gắp thả nhân vật mượt mà, hệ thống animation biểu cảm phong phú (vui vẻ khi xếp đúng, khóc lóc/tức giận và trừ Tim khi xếp sai luật).",
+      "Kiến trúc Môi trường Đa dạng & Data-Driven Levels: Thiết kế cấu trúc nạp dữ liệu màn chơi linh hoạt qua ScriptableObjects, dễ dàng mở rộng nhiều bối cảnh khác nhau (Lớp học, Xe buýt, Quán cafe, Công viên).",
+      "Hệ thống Trợ giúp Thông minh (Hints & Eraser Tools): Xây dựng tính năng gợi ý vị trí logic (Hint Bulb) và công cụ sửa lỗi (Eraser) hỗ trợ người chơi vượt qua các màn giải đố hóc búa.",
+      "Tối ưu hóa Hiệu năng & UI Canvas: Tối ưu hóa Canvas Rebuilds, phân tách các layer UI tĩnh/động và áp dụng Object Pooling cho các icon, nhân vật và hiệu ứng hạt VFX giúp game chạy mượt 60 FPS."
+    ],
+    techStack: ["Unity 2D/3D", "C# Logic Programming", "Rule-based Engine", "Drag & Drop System", "Multi-State Characters", "ScriptableObjects", "Object Pooling"]
   }
 ];
 
