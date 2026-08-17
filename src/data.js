@@ -123,6 +123,24 @@ export const projectsData = [
       "Tối ưu hóa Hiệu năng & UI Canvas: Tối ưu hóa Canvas Rebuilds, phân tách các layer UI tĩnh/động và áp dụng Object Pooling cho các icon, nhân vật và hiệu ứng hạt VFX giúp game chạy mượt 60 FPS."
     ],
     techStack: ["Unity 2D/3D", "C# Logic Programming", "Rule-based Engine", "Drag & Drop System", "Multi-State Characters", "ScriptableObjects", "Object Pooling"]
+  },
+  {
+    id: "alien-portal",
+    title: "Alien Portal",
+    role: "Code Chính",
+    hasWebglDemo: false,
+    webglPath: "./webgl/alien-portal/index.html",
+    apkUrl: "https://drive.google.com/file/d/1OV5tYHwgW-qfry03km_4-U-qaUoL_-eY/view?usp=sharing",
+    tagline: "Game giải đố chiến thuật không gian: Điều hướng các sinh vật ngoài hành tinh qua mạng lưới cổng dịch chuyển (Portals), khớp màu với hạm đội UFO và quản lý hàng chờ khay chứa giới hạn.",
+    thumbnail: "./images/alien_portal.webp",
+    features: [
+      "Lập trình Core Gameplay (Portal Dispatching & UFO Color Matching): Xây dựng cơ chế chạm để điều hướng Alien (Tap-to-send), thuật toán kiểm tra khớp màu với chiếc UFO đang trực (On-duty UFO) và logic nạp Alien lên đĩa bay.",
+      "Hệ thống Đồ thị Cổng Dịch Chuyển & Tìm đường (Portal Graph & Pathfinding): Thiết kế cấu trúc đồ thị liên kết các node cổng và bệ Alien, thuật toán tìm đường (Pathfinding) tự động phát hiện đường đi thông suốt hoặc xử lý trạng thái tắc nghẽn.",
+      "Cơ chế Hàng Chờ Chiến Lược (Queue System) & Xử Lý Thất Bại: Lập trình hệ thống khay chờ 6 slots chứa các Alien sai màu, thuật toán kiểm soát lấp đầy và xử lý trạng thái thua cuộc (Fail State) khi hàng chờ bị tràn.",
+      "Hệ thống Hạm Đội UFO Di Chuyển (UFO Fleet Rotation): Lập trình chuỗi đĩa bay UFO di chuyển liên tục theo hàng ngang, tự động đổi ca khi nạp đủ số lượng Alien tương ứng.",
+      "Tối ưu hóa Hiệu năng & Hoạt họa Mượt mà (Zero GC & Pooling): Áp dụng Object Pooling cho hàng trăm Alien tí hon, cổng portal phát sáng và hiệu ứng chùm sáng tia UFO, tối ưu Draw Calls đạt 60 FPS mượt mà."
+    ],
+    techStack: ["Unity 2D/3D", "C# Gameplay", "Portal Graph System", "Pathfinding Algorithm", "UFO Color Matching", "Queue Management", "Object Pooling"]
   }
 ];
 
